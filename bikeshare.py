@@ -7,8 +7,14 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 def display_data(df, city):
-    """Displays the continuous raw data upon request by the user.
-       Ask user if they want to see the first 5 rows of data"""
+    """
+    Displays the continuous raw data upon request by the user.
+    Ask user if they want to see the first 5 rows of data
+    Display the first 5 rows of data to the user if the answer is yes
+    Then ask user if they want to see the next 5 rows of data
+    Continue iterating these prompts and displaying the next 5 rows of data
+    Stop the program when the user say no or there is no more data to display
+    """
     start_loc = 0
     display = input('\nDo you want to see the first 5 rows of data? Enter yes or no.\n')
     while (display.lower() == 'yes'):
@@ -113,7 +119,7 @@ def time_stats(df):
 
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
+    """Displays statistics on the most popular start station, end station and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()

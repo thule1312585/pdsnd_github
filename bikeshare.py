@@ -8,7 +8,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 def display_data(df, city):
     """Displays the continuous raw data upon request by the user.
-        Ask user if they want to see the first 5 rows of data"""
+       Ask user if they want to see the first 5 rows of data"""
     start_loc = 0
     display = input('\nDo you want to see the first 5 rows of data? Enter yes or no.\n')
     while (display.lower() == 'yes'):
